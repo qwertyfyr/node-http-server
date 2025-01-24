@@ -34,7 +34,7 @@ export async function removeTree(treePath) {
     return;
   }
 
-  const nodes = await fs.promises.readdir(treePath); // # coding equivelant of the holocaust
+  const nodes = await fs.promises.readdir(treePath);
   for (let node of nodes) {
     const nodePath = `${treePath}/${node}`;
     console.log("checking: ", nodePath);
